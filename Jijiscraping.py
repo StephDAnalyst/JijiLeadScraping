@@ -18,9 +18,8 @@ time.sleep(5)
 itemz = []
 itemtarcount = 10
 previous_height = driver.execute_script("return document.body.scrollHeight")
-# itemtarcount = 50
-# cont = "//div[@class='b-list-advert-base__data__inner']"
-# showcon = "//div[@class='h-flex-center b-btn b-btn--main h-bold h-height-40 h-width-100p']"
+# to scrap the entire page use:
+# while True
 while itemtarcount > len(itemz):
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
     time.sleep(2)  #
